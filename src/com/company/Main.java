@@ -11,6 +11,7 @@ public class Main {
         MasseyUniversity.displayTask3();
         MasseyUniversity.displayTask4();
         MasseyUniversity.displayTask5();
+        MasseyUniversity.displayTask6();
     }
 
     private static void displayInfo()

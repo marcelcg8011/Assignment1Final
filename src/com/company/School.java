@@ -3,6 +3,7 @@ package com.company;
 public class School {
     private String NameOfSchool;
     private Paper[] Papers;
+    private AucklandPaper[] AucklandPapers;
     static final int NUM_PAPERS = 8;
 
 
@@ -20,6 +21,17 @@ public class School {
         Papers[5] = new Paper("Object-Oriented Programming", "CS, SE", 159234, 50, 10, 40);
         Papers[6] = new Paper("Database Development", "IT, SE, DS", 158337, 60, 0, 40);
         Papers[7] = new Paper("Professionalism in the Information Sciences", "IT, IS, CS, DS, SE", 158345, 100, 0, 0);
+
+        AucklandPapers = new AucklandPaper[NUM_PAPERS];
+
+        AucklandPapers[1] = new AucklandPaper(158100);
+        AucklandPapers[2] = new AucklandPaper(158120);
+        AucklandPapers[3] = new AucklandPaper(159101);
+        AucklandPapers[4] = new AucklandPaper(159201);
+        AucklandPapers[5] = new AucklandPaper(159234);
+        AucklandPapers[6] = new AucklandPaper(158337);
+        AucklandPapers[7] = new AucklandPaper(158345);
+
     }
     public String getNameOfSchool() {
         return NameOfSchool;
@@ -106,5 +118,16 @@ public class School {
             }
         }
         System.out.println("Total number of papers that have assignments weighted more than 50%: " + counterAssignment);
+    }
+
+    public void displayTask6()
+    {
+        System.out.println();
+        System.out.println("----------------- Task6 -----------------");
+        System.out.println("Paper offering details:");
+        for (int i = 1; i < NUM_PAPERS; i++)
+        {
+            AucklandPapers[i].displayCodeLecturerOffering();
+        }
     }
 }
