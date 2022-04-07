@@ -6,7 +6,11 @@ public class Main {
     {
         School MasseyUniversity = new School("School of Mathematical and Computational Sciences");
         displayInfo();
-        MasseyUniversity.displayNameOfSchool();
+        MasseyUniversity.displayTask1();
+        MasseyUniversity.displayTask2();
+        MasseyUniversity.displayTask3();
+        MasseyUniversity.displayTask4();
+        MasseyUniversity.displayTask5();
     }
 
     private static void displayInfo()
