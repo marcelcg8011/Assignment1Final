@@ -87,4 +87,25 @@ public class School {
         }
         System.out.println("Total number of papers that have an exam: " + counterExam);
     }
+
+    public void displayTask5()
+    {
+        int testerAssignment;
+        int counterAssignment = 0;
+        System.out.println();
+        System.out.println("----------------- Task5 -----------------");
+        System.out.println("Papers that their assignments weigh higher than 50.0%:");
+
+        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        {
+            testerAssignment = Papers[i].getAssignments();
+
+            if (testerAssignment > 50)
+            {
+                System.out.println("Paper -  " + Papers[i].getNumber() + " " + Papers[i].getName());
+                counterAssignment++;
+            }
+        }
+        System.out.println("Total number of papers that have assignments weighted more than 50%: " + counterAssignment);
+    }
 }

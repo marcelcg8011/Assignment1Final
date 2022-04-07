@@ -10,6 +10,7 @@ public class Main {
         MasseyUniversity.displayTask2();
         MasseyUniversity.displayTask3();
         MasseyUniversity.displayTask4();
+        MasseyUniversity.displayTask5();
     }
 
     private static void displayInfo()
