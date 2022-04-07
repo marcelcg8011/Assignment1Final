@@ -52,7 +52,7 @@ public class School {
         int counterCS = 0;
         System.out.println();
         System.out.println("----------------- Task 3 -----------------");
-        System.out.println("All papers details:");
+        System.out.println("Papers that belong to CS major:");
 
         for (int i = 1; i < NUM_PAPERDETAILS ; i++)
         {
@@ -65,5 +65,26 @@ public class School {
             }
         }
         System.out.println("Total matching papers in specified Major - CS: " + counterCS);
+    }
+
+    public void displayTask4()
+    {
+        int testerExam;
+        int counterExam = 0;
+        System.out.println();
+        System.out.println("----------------- Task 4 -----------------");
+        System.out.println("Papers that have an exam:");
+
+        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        {
+            testerExam = Papers[i].getExam();
+
+            if (testerExam != 0)
+            {
+                System.out.println("Paper -  " + Papers[i].getNumber() + " " + Papers[i].getName());
+                counterExam++;
+            }
+        }
+        System.out.println("Total number of papers that have an exam: " + counterExam);
     }
 }
