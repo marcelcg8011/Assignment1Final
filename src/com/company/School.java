@@ -10,7 +10,8 @@ public class School {
 
 
     public School(String NameOfSchool) {
-        this.NameOfSchool = NameOfSchool;
+
+        setNameOfSchool(NameOfSchool);
 
         Papers = new Paper[NUM_PAPERS];
 
@@ -60,6 +61,7 @@ public class School {
     public String getNameOfSchool() {
         return NameOfSchool;
     }
+
     public void setNameOfSchool(String NameOfSchool) { this.NameOfSchool = NameOfSchool; }
 
     public void displayTask1()
