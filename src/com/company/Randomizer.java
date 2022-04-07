@@ -46,5 +46,36 @@ public class Randomizer {
                 }
                 else return "Randomizer failed";
         }
+
+        public String getRandomPalmerston()
+        {
+                int min = 1;
+                int max = 4;
+                int range = max - min + 1;
+                int picker;
+
+                // generate random numbers within range of min and max
+
+                picker = (int) (Math.random() * range) + min;
+
+//                1105236 Amy Sheffield PN
+//                1235894 Victoria Jensen PN
+//                7225669 James Lee PN
+//                1328991 Colin Delmont PN
+
+                if (picker == 1) {
+                        return "Amy Sheffield";
+                }
+                if (picker == 2) {
+                        return "Victoria Jensen";
+                }
+                if (picker == 3) {
+                        return "James Lee";
+                }
+                if (picker == 4) {
+                        return "Colin Delmont";
+                }
+                else return "Randomizer failed";
+        }
     }
 

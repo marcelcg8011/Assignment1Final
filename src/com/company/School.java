@@ -4,6 +4,7 @@ public class School {
     private String NameOfSchool;
     private Paper[] Papers;
     private AucklandPaper[] AucklandPapers;
+    private PalmerstonPaper[] PalmerstonPapers;
     static final int NUM_PAPERS = 8;
 
 
@@ -31,6 +32,16 @@ public class School {
         AucklandPapers[5] = new AucklandPaper(159234);
         AucklandPapers[6] = new AucklandPaper(158337);
         AucklandPapers[7] = new AucklandPaper(158345);
+
+        PalmerstonPapers = new PalmerstonPaper[NUM_PAPERS];
+        PalmerstonPapers[1] = new PalmerstonPaper(158100);
+        PalmerstonPapers[2] = new PalmerstonPaper(158120);
+        PalmerstonPapers[3] = new PalmerstonPaper(159101);
+        PalmerstonPapers[4] = new PalmerstonPaper(159201);
+        PalmerstonPapers[5] = new PalmerstonPaper(159234);
+        PalmerstonPapers[6] = new PalmerstonPaper(158337);
+        PalmerstonPapers[7] = new PalmerstonPaper(158345);
+
 
     }
     public String getNameOfSchool() {
@@ -128,6 +139,7 @@ public class School {
         for (int i = 1; i < NUM_PAPERS; i++)
         {
             AucklandPapers[i].displayCodeLecturerOffering();
+            PalmerstonPapers[i].displayCodeLecturerOffering();
         }
     }
 }
