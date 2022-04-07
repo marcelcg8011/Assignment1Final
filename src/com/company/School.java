@@ -4,7 +4,6 @@ public class School {
     private String NameOfSchool;
     private Paper[] Papers;
     static final int NUM_PAPERS = 8;
-    static final int NUM_PAPERDETAILS = 8;
 
 
     public School(String NameOfSchool) {
@@ -39,7 +38,7 @@ public class School {
         System.out.println("----------------- Task 2 -----------------");
         System.out.println("All papers details:");
 
-        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        for (int i = 1; i < NUM_PAPERS; i++)
         {
             Papers[i].displayNumberNameMajors();
         }
@@ -54,7 +53,7 @@ public class School {
         System.out.println("----------------- Task 3 -----------------");
         System.out.println("Papers that belong to CS major:");
 
-        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        for (int i = 1; i < NUM_PAPERS; i++)
         {
             testerCS = Papers[i].getMajors();
 
@@ -75,7 +74,7 @@ public class School {
         System.out.println("----------------- Task 4 -----------------");
         System.out.println("Papers that have an exam:");
 
-        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        for (int i = 1; i < NUM_PAPERS; i++)
         {
             testerExam = Papers[i].getExam();
 
@@ -96,7 +95,7 @@ public class School {
         System.out.println("----------------- Task5 -----------------");
         System.out.println("Papers that their assignments weigh higher than 50.0%:");
 
-        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        for (int i = 1; i < NUM_PAPERS; i++)
         {
             testerAssignment = Papers[i].getAssignments();
 
