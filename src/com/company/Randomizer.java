@@ -85,17 +85,6 @@ public class Randomizer {
                 int range = max - min + 1;
                 int picker;
 
-                // generate random numbers within range of min and max
-
-//                1562347 Thomas Becker Auckland
-//                5664789 Steven Hobbs Auckland
-//                3658947 Andrew Jackson Auckland
-//                6332698 Jonathon Wood Auckland
-//                12345678 Mickey Mouse Auckland
-//                1105236 Amy Sheffield PN
-//                1235894 Victoria Jensen PN
-//                7225669 James Lee PN
-//                1328991 Colin Delmont PN
 
                 picker = (int) (Math.random() * range) + min;
 

@@ -14,6 +14,7 @@ public class AucklandPaper {
     {
         System.out.println(getCode() + "  " + getOffering() + "  " + getLecturer());
     }
+
     public int getCode() {
         return code;
     }
@@ -29,6 +30,7 @@ public class AucklandPaper {
     public void setLecturer(String lecturer) {
         Lecturer = lecturer;
     }
+
     public String getOffering() {
         return Offering;
     }
