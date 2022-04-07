@@ -2,8 +2,21 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
+        School MasseyUniversity = new School("School of Mathematical and Computational Sciences");
+        displayInfo();
+        MasseyUniversity.displayNameOfSchool();
+    }
 
+    private static void displayInfo()
+    {
+        System.out.println();
+        System.out.println("*************************************************");
+        System.out.println("Assignment 1, 159.234 Semester 1 2022");
+        System.out.println("Submitted by: Marcel Cantin-Gilmore ID: 17202138");
+        System.out.println("My Major at Massey: Computer Science");
+        System.out.println("*************************************************");
+        System.out.println();
     }
 }
