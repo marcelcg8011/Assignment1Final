@@ -1,14 +1,14 @@
 package com.company;
 
-public class AucklandPaper {
+public class DistancePaper {
     private int code;
     private String Lecturer;
-    private final String Offering = "Auckland";
+    private final String Offering = "Distance";
 
-    public AucklandPaper(int code) {
+    public DistancePaper(int code) {
         setCode(code);
         Randomizer assignLecturer = new Randomizer();
-        setLecturer(assignLecturer.getRandomAuckland());
+        setLecturer(assignLecturer.getRandomDistance());
     }
     public void displayCodeLecturerOffering()
     {

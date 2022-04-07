@@ -77,5 +77,40 @@ public class Randomizer {
                 }
                 else return "Randomizer failed";
         }
+
+        public String getRandomDistance()
+        {
+                int min = 1;
+                int max = 8;
+                int range = max - min + 1;
+                int picker;
+
+                // generate random numbers within range of min and max
+
+//                1562347 Thomas Becker Auckland
+//                5664789 Steven Hobbs Auckland
+//                3658947 Andrew Jackson Auckland
+//                6332698 Jonathon Wood Auckland
+//                12345678 Mickey Mouse Auckland
+//                1105236 Amy Sheffield PN
+//                1235894 Victoria Jensen PN
+//                7225669 James Lee PN
+//                1328991 Colin Delmont PN
+
+                picker = (int) (Math.random() * range) + min;
+
+                String name = switch (picker) {
+                        case 1 -> "Thomas Becker";
+                        case 2 -> "Steven Hobbs";
+                        case 3 -> "Andrew Jackson";
+                        case 4 -> "Jonathon Wood";
+                        case 5 -> "Marcel Cantin-Gilmore";
+                        case 6 -> "Victoria Jensen";
+                        case 7 -> "James Lee";
+                        case 8 -> "Colin Delmont";
+                        default -> " ";
+                };
+                return name;
+        }
     }
 

@@ -5,6 +5,7 @@ public class School {
     private Paper[] Papers;
     private AucklandPaper[] AucklandPapers;
     private PalmerstonPaper[] PalmerstonPapers;
+    private DistancePaper[] DistancePapers;
     static final int NUM_PAPERS = 8;
 
 
@@ -34,6 +35,7 @@ public class School {
         AucklandPapers[7] = new AucklandPaper(158345);
 
         PalmerstonPapers = new PalmerstonPaper[NUM_PAPERS];
+
         PalmerstonPapers[1] = new PalmerstonPaper(158100);
         PalmerstonPapers[2] = new PalmerstonPaper(158120);
         PalmerstonPapers[3] = new PalmerstonPaper(159101);
@@ -41,6 +43,17 @@ public class School {
         PalmerstonPapers[5] = new PalmerstonPaper(159234);
         PalmerstonPapers[6] = new PalmerstonPaper(158337);
         PalmerstonPapers[7] = new PalmerstonPaper(158345);
+
+        DistancePapers = new DistancePaper[NUM_PAPERS];
+
+        DistancePapers[1] = new DistancePaper(158100);
+        DistancePapers[2] = new DistancePaper(158120);
+        DistancePapers[3] = new DistancePaper(159101);
+        DistancePapers[4] = new DistancePaper(159201);
+        DistancePapers[5] = new DistancePaper(159234);
+        DistancePapers[6] = new DistancePaper(158337);
+        DistancePapers[7] = new DistancePaper(158345);
+
 
 
     }
@@ -138,6 +151,7 @@ public class School {
         System.out.println("Paper offering details:");
         for (int i = 1; i < NUM_PAPERS; i++)
         {
+            DistancePapers[i].displayCodeLecturerOffering();
             AucklandPapers[i].displayCodeLecturerOffering();
             PalmerstonPapers[i].displayCodeLecturerOffering();
         }

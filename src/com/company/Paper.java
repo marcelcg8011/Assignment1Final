@@ -10,12 +10,20 @@ public class Paper {
 
 
     public Paper(String name, String majors, int number, int assignments, int tests, int exam) {
-        this.name = name;
-        this.majors = majors;
-        this.number = number;
-        this.assignments = assignments;
-        this.tests = tests;
-        this.exam = exam;
+//        this.name = name;
+
+//        this.majors = majors;
+//        this.number = number;
+//        this.assignments = assignments;
+//        this.tests = tests;
+//        this.exam = exam;
+        setName(name);
+        setMajors(majors);
+        setNumber(number);
+        setAssignments(assignments);
+        setTests(tests);
+        setExam(exam);
+
     }
 
     public void displayNumberNameMajors()

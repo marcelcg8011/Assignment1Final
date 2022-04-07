@@ -6,9 +6,10 @@ public class PalmerstonPaper {
     private final String Offering = "Palmerston";
 
     public PalmerstonPaper(int code) {
-        this.code = code;
+        setCode(code);
         Randomizer assignLecturer = new Randomizer();
-        Lecturer = assignLecturer.getRandomPalmerston();
+        setLecturer(assignLecturer.getRandomPalmerston());
+
     }
     public void displayCodeLecturerOffering()
     {
@@ -29,6 +30,7 @@ public class PalmerstonPaper {
     public void setLecturer(String lecturer) {
         Lecturer = lecturer;
     }
+
     public String getOffering() {
         return Offering;
     }
