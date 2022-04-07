@@ -45,4 +45,25 @@ public class School {
         }
 
     }
+
+    public void displayTask3()
+    {
+        String testerCS;
+        int counterCS = 0;
+        System.out.println();
+        System.out.println("----------------- Task 3 -----------------");
+        System.out.println("All papers details:");
+
+        for (int i = 1; i < NUM_PAPERDETAILS ; i++)
+        {
+            testerCS = Papers[i].getMajors();
+
+            if (testerCS.contains("CS"))
+            {
+                System.out.println("Paper -  " + Papers[i].getNumber() + " " + Papers[i].getName());
+                counterCS++;
+            }
+        }
+        System.out.println("Total matching papers in specified Major - CS: " + counterCS);
+    }
 }
