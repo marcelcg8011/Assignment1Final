@@ -29,28 +29,21 @@ public class Randomizer {
 //                6332698 Jonathon Wood Auckland
 //                12345678 Mickey Mouse Auckland
 
-                if (picker == 1) {
-                        return "Thomas Becker";
-                }
-                if (picker == 2) {
-                        return "Steven Hobbs";
-                }
-                if (picker == 3) {
-                        return "Andrew Jackson";
-                }
-                if (picker == 4) {
-                        return "Jonathon Wood";
-                }
-                if (picker == 5) {
-                        return "Marcel Cantin-Gilmore";
-                }
-                else return "Randomizer failed";
+                String name = switch (picker) {
+                        case 1 -> "Thomas Becker";
+                        case 2 -> "Steven Hobbs";
+                        case 3 -> "Andrew Jackson";
+                        case 4 -> "Jonathon Wood";
+                        case 5 -> "Marcel Cantin-Gilmore";
+                        default -> " ";
+                };
+                return name;
         }
 
         public String getRandomPalmerston()
         {
-                int min = 1;
-                int max = 4;
+                int min = 6;
+                int max = 9;
                 int range = max - min + 1;
                 int picker;
 
@@ -63,25 +56,20 @@ public class Randomizer {
 //                7225669 James Lee PN
 //                1328991 Colin Delmont PN
 
-                if (picker == 1) {
-                        return "Amy Sheffield";
-                }
-                if (picker == 2) {
-                        return "Victoria Jensen";
-                }
-                if (picker == 3) {
-                        return "James Lee";
-                }
-                if (picker == 4) {
-                        return "Colin Delmont";
-                }
-                else return "Randomizer failed";
+                String name = switch (picker) {
+                        case 6 -> "Amy Sheffield";
+                        case 7 -> "Victoria Jensen";
+                        case 8 -> "James Lee";
+                        case 9 -> "Colin Delmont";
+                        default -> " ";
+                };
+                return name;
         }
 
         public String getRandomDistance()
         {
                 int min = 1;
-                int max = 8;
+                int max = 9;
                 int range = max - min + 1;
                 int picker;
 
@@ -94,9 +82,10 @@ public class Randomizer {
                         case 3 -> "Andrew Jackson";
                         case 4 -> "Jonathon Wood";
                         case 5 -> "Marcel Cantin-Gilmore";
-                        case 6 -> "Victoria Jensen";
-                        case 7 -> "James Lee";
-                        case 8 -> "Colin Delmont";
+                        case 6 -> "Amy Sheffield";
+                        case 7 -> "Victoria Jensen";
+                        case 8 -> "James Lee";
+                        case 9 -> "Colin Delmont";
                         default -> " ";
                 };
                 return name;
