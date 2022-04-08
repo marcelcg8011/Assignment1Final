@@ -130,7 +130,7 @@ public class School {
         int testerAssignment;
         int counterAssignment = 0;
         System.out.println();
-        System.out.println("----------------- Task5 -----------------");
+        System.out.println("----------------- Task 5 -----------------");
         System.out.println("Papers that their assignments weigh higher than 50.0%:");
 
         for (int i = 1; i < NUM_PAPERS; i++)
@@ -149,7 +149,7 @@ public class School {
     public void displayTask6()
     {
         System.out.println();
-        System.out.println("----------------- Task6 -----------------");
+        System.out.println("----------------- Task 6 -----------------");
         System.out.println("Paper offering details:");
         for (int i = 1; i < NUM_PAPERS; i++)
         {
@@ -158,4 +158,53 @@ public class School {
             PalmerstonPapers[i].displayCodeLecturerOffering();
         }
     }
+
+    public void displayTask7()
+    {
+        System.out.println();
+        System.out.println("----------------- Task 7 -----------------");
+        System.out.println("The paper offerings that I teach:");
+        int AucklandCounter = 0;
+        int DistanceCounter = 0;
+        for (int i = 1; i < NUM_PAPERS; i++)
+        {
+            if (AucklandPapers[i].getPapersThatITeach("Marcel Cantin-Gilmore")) {
+                AucklandCounter++;
+                AucklandPapers[i].printMyPapers();
+            }
+            if (DistancePapers[i].getPapersThatITeach("Marcel Cantin-Gilmore")) {
+                DistanceCounter++;
+                DistancePapers[i].printMyPapers();
+            }
+//            DistancePapers[i].displayCodeLecturerOffering();
+//            AucklandPapers[i].displayCodeLecturerOffering();
+//            PalmerstonPapers[i].displayCodeLecturerOffering();
+        }
+        int TotalCounter = AucklandCounter + DistanceCounter;
+
+        System.out.println("I am teaching " + TotalCounter + " paper(s)");
+    }
+    public void displayTask8()
+    {
+        String Task8Lecturer = AucklandPapers[5].getLecturer();
+        System.out.println();
+        System.out.println("----------------- Task 8 -----------------");
+        System.out.println("The lecturer of Auckland Offering of 159234:");
+        System.out.println("Lecturer's Name: " + Task8Lecturer);
+        int AucklandCounter = 0;
+        int DistanceCounter = 0;
+        for (int i = 1; i < NUM_PAPERS; i++)
+        {
+            if (AucklandPapers[i].getPapersThatITeach(Task8Lecturer)) {
+                AucklandCounter++;
+            }
+            if (DistancePapers[i].getPapersThatITeach(Task8Lecturer)) {
+                DistanceCounter++;
+            }
+        }
+        int TotalCounter = AucklandCounter + DistanceCounter;
+
+        System.out.println("This lecturer is teaching " + TotalCounter + " paper(s)");
+    }
+
 }

@@ -15,6 +15,19 @@ public class AucklandPaper {
         System.out.println(getCode() + "  " + getOffering() + "  " + getLecturer());
     }
 
+    public boolean getPapersThatITeach(String tester)
+    {
+
+        return tester.equals(getLecturer());
+    }
+
+
+
+    public void printMyPapers()
+    {
+        System.out.println("Paper Offering -  " + getCode() + "   Auckland   Lecturer: " + getLecturer());
+    }
+
     public int getCode() {
         return code;
     }

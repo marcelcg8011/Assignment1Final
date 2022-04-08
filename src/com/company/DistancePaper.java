@@ -14,6 +14,13 @@ public class DistancePaper {
     {
         System.out.println(getCode() + "  " + getOffering() + "  " + getLecturer());
     }
+
+    public boolean getPapersThatITeach(String tester)
+    {
+
+        return tester.equals(getLecturer());
+    }
+
     public int getCode() {
         return code;
     }
@@ -31,5 +38,9 @@ public class DistancePaper {
     }
     public String getOffering() {
         return Offering;
+    }
+    public void printMyPapers()
+    {
+        System.out.println("Paper Offering -  " + getCode() + "   Distance   Lecturer: " + getLecturer());
     }
 }
