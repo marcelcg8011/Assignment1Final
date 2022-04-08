@@ -14,6 +14,8 @@ public class Main {
         MasseyUniversity.displayTask6();
         MasseyUniversity.displayTask7();
         MasseyUniversity.displayTask8();
+        MasseyUniversity.getLecturerCount();
+
     }
 
     private static void displayInfo()

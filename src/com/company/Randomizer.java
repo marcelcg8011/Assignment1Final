@@ -47,14 +47,9 @@ public class Randomizer {
                 int range = max - min + 1;
                 int picker;
 
-                // generate random numbers within range of min and max
 
                 picker = (int) (Math.random() * range) + min;
 
-//                1105236 Amy Sheffield PN
-//                1235894 Victoria Jensen PN
-//                7225669 James Lee PN
-//                1328991 Colin Delmont PN
 
                 String name = switch (picker) {
                         case 6 -> "Amy Sheffield";

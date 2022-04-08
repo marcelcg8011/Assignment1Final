@@ -11,6 +11,12 @@ public class PalmerstonPaper {
         setLecturer(assignLecturer.getRandomPalmerston());
 
     }
+    public boolean getPapersThatITeach(String tester)
+    {
+
+        return tester.equals(getLecturer());
+    }
+
     public void displayCodeLecturerOffering()
     {
         System.out.println(getCode() + "  " + getOffering() + "  " + getLecturer());
