@@ -206,38 +206,4 @@ public class School {
         System.out.println("This lecturer is teaching " + TotalCounter + " paper(s)");
     }
 
-    public void getLecturerCount()
-    {
-        System.out.println();
-
-        int AmyCounter = 0;
-        int VictoriaCounter = 0;
-        int JamesCounter = 0;
-        int ColinCounter = 0;
-        String Amy = "Amy Sheffield";
-        String Victoria = "Victoria Jensen";
-        String James = "James Lee";
-        String Colin = "Colin Delmont";
-        for (int i = 1; i < NUM_PAPERS; i++)
-        {
-            if (PalmerstonPapers[i].getPapersThatITeach(Amy)) {
-                AmyCounter++;
-            }
-            if (PalmerstonPapers[i].getPapersThatITeach(Victoria)) {
-                VictoriaCounter++;
-            }
-            if (PalmerstonPapers[i].getPapersThatITeach(James)) {
-                JamesCounter++;
-            }
-            if (PalmerstonPapers[i].getPapersThatITeach(Colin)) {
-                ColinCounter++;
-            }
-        }
-        System.out.println("Amy is teaching " + AmyCounter + " paper(s)");
-        System.out.println("Victoria is teaching " + VictoriaCounter + " paper(s)");
-        System.out.println("James is teaching " + JamesCounter + " paper(s)");
-        System.out.println("Colin is teaching " + ColinCounter + " paper(s)");
-
-    }
-
 }
