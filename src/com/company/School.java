@@ -176,9 +176,7 @@ public class School {
                 DistanceCounter++;
                 DistancePapers[i].printMyPapers();
             }
-//            DistancePapers[i].displayCodeLecturerOffering();
-//            AucklandPapers[i].displayCodeLecturerOffering();
-//            PalmerstonPapers[i].displayCodeLecturerOffering();
+
         }
         int TotalCounter = AucklandCounter + DistanceCounter;
 
